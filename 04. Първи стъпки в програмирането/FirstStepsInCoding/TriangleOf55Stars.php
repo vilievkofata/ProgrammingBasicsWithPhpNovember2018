@@ -1,2 +1,11 @@
 <?php
-//TODO
+echo '*' . PHP_EOL;
+echo '**' . PHP_EOL;
+echo '***' . PHP_EOL;
+echo '****' . PHP_EOL;
+echo '*****' . PHP_EOL;
+echo '******' . PHP_EOL;
+echo '*******' . PHP_EOL;
+echo '********' . PHP_EOL;
+echo '*********' . PHP_EOL;
+echo '**********' . PHP_EOL;
