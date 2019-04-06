@@ -1,4 +1,5 @@
 <?php
+
 $aBase = readline();
 $bBase = readline();
 $height = readline();

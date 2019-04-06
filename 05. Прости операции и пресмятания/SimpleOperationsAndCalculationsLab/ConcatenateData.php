@@ -1,4 +1,5 @@
 <?php
+
 $firstName = readline();
 $lastName = readline();
 $age = readline();
