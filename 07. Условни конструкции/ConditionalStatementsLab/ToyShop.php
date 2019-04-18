@@ -1,0 +1,4 @@
+<?php
+
+$priceOfExcursion = readline();
+
