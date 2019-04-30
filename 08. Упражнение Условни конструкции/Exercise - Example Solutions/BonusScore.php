@@ -1,21 +1,19 @@
 <?php
 
-$number = intval(readline());
-$bonusPoints = 0;
-
-if ($number <= 100) {
-    $bonusPoints = 5;
-} else if ($number <= 1000) {
-    $bonusPoints = 0.2 * $number;
-} else if ($number > 1000) {
-    $bonusPoints = 0.1 * $number;
+$score = intval(readline());
+$bonus = 0;
+if ($score <= 100) {
+    $bonus = 5;
+} elseif ($score <= 1000) {
+    $bonus = 20 / 100 * $score;
+} elseif ($score > 1000) {
+    $bonus = 10 / 100 * $score;
 }
-
-if ($number % 2 == 0) {
-    $bonusPoints++;
-} else if ($number % 10 == 5) {
-    $bonusPoints += 2;
+if ($score % 2 == 0) {
+    $bonus++;
+} elseif ($score % 10 == 5) {
+    $bonus += 2;
 }
-$result = $bonusPoints + $number;
-echo $bonusPoints . PHP_EOL;
-echo $result;
+$bonusScore = $bonus + $score;
+echo $bonus . PHP_EOL;
+echo $bonusScore;

@@ -2,21 +2,16 @@
 
 $hours = intval(readline());
 $minutes = intval(readline());
-
-
-$after15minutes = $minutes + 15;
-
-if ($after15minutes > 59) {
-    $hours ++;
-    $after15minutes -= 60;
+$minutesPlus15 = $minutes + 15;
+if ($minutesPlus15 > 59) {
+    $hours++;
+    $minutesPlus15 -= 60;
 }
-
 if ($hours > 23) {
     $hours -= 24;
 }
-
-if ($after15minutes < 10) {
-    echo $hours . ':0' . $after15minutes;
+if ($minutesPlus15 < 10) {
+    echo $hours . ':0' . $minutesPlus15;
 } else {
-    echo $hours . ':' . $after15minutes;
+    echo $hours . ':' . $minutesPlus15;
 }
